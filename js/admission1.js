@@ -70,7 +70,7 @@ function TotalFee(){
     return total;
 }
 var styles={
-    "background":"#6eb19a",
+    "background":"#6eb1ae",
     "margin":"10px",
     "color":"#020324",
 };

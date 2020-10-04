@@ -64,7 +64,7 @@ body {
   font-family: "Lato", sans-serif;
   font-family: 'Playfair Display', serif;
   background-color: #07083b;
-  background: linear-gradient(#2f00af,#0a0b4e,#080322);
+  background: linear-gradient(#000caf,#0a0b4e,#080322);
   background-repeat: no-repeat;
   height:fit-content;
   min-height: 120vh;
@@ -122,7 +122,7 @@ body {
   }
  .txt span{
       font-size: 120%;
-      color: #ffbb00;
+      color: #ffd000;
   }
   .homeh{
     text-shadow: 2px 2px 10px #0951ce;
@@ -353,7 +353,7 @@ body {
 /*end utility*/
 /*admission*/
 form{
-  background:linear-gradient(#34f8ff,#123456,#48f3ff);
+  background:linear-gradient(#348cff,#123456,#4897ff);
   margin:10px; 
   color:#020324; 
   font-size: 110%;
@@ -377,7 +377,7 @@ input[type=submit] {
   background-color: #4CAF50;
   color: rgb(17, 8, 26);
   padding: 12px 25px;
-  border: none;
+  border: solid #073b0e 1px;
   border-radius: 4px;
   cursor: pointer;
   float: left;
