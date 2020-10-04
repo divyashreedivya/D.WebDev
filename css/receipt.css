@@ -1,0 +1,22 @@
+body{
+    background-color: #6eb19a;
+}
+.date{
+    padding-bottom:2%;
+    border:solid 2px black;
+}
+table{
+   /* background-color: #398fb1;*/
+    width:100%;
+   border-collapse: collapse;
+}
+tr{ border :solid #000000 1px;
+    line-height: 20px;
+}
+td{
+    border:solid #000000 1px;
+}
+button{
+    padding:1%;
+    margin-top:2%;
+}

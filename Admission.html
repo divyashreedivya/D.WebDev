@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale0.86, maximum-scale=3.0, minimum-scale=0.86"> 
+        <title>Admission</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script rel= "stylesheet" src="js/style.js"></script>
+        <script rel="stylesheet" src="js/admission.js"></script>
+    </head>
+    <body>
+        <div>
+        <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img class="imgp" src="img/navclg.jpeg" alt="profile">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="hostelmess.html">Hostel & Mess</a>
+            <a href="Admission.html">Admission</a>
+            
+          </div>
+          <span style="font-size:30px;cursor:pointer;margin-left:1%;" onclick="openNav()">&#9776;</span> 
+    </nav>
+    <div>
+        <h1 class="apply"><span style="color:#ffd000">A</span>pply Now</h1>
+        <form action="" name="formad" id="admission" onsubmit="return false;">
+        <fieldset>
+            
+            <legend>Personal Information</legend><br>
+            <label for="name">Name:</label>
+            <input type="text" name="name"><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob">
+            
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </fieldset>
+        <fieldset><br>
+            <label>Course</label>
+            <select id="course" name="course" required><!-- onchange="getCourseFee(); getTotal()">-->
+                <option value="None">Select</option>
+                <option value="Aeronautical Engineering">Aeronautical Engineering</option>
+                <option value="Biotechnology">Biotechnology</option>
+                <option value="Chemical Engineering">Chemical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+                <option value="Electronics & Communication Engineering">Electronics & Communication Engineering</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Mechatronics">Mechatronics</option>
+            </select><br>
+            
+            <legend>Admission Information</legend>
+            <label>Hostel</label>
+            <select id="hostel" name="hostel" >
+                <option value="Nn">Not Needed</option>
+                <option value="girls-s" class="girls">Cressida</option>
+                <option value="girls-d" class="girls">Aurora</option>
+                <option value="girls-t" class="girls">Titania</option>
+                <option value="boys-s" class="boys">Columba</option>
+                <option value="boys-d" class="boys">Holmes</option>
+                <option value="boys-t" class="boys">Pallas</option>
+            </select>
+            <label>Mess</label>
+            <select id="mess" name="mess" >
+                <option value="Nn">Not Needed</option>
+                <option value="veg">Adhara (Veg)</option>
+                <option value="non-veg">Alpha (Non-Veg)</option>
+            </select>
+        <input type="submit" value="Submit" onclick="display()">
+        </fieldset>
+        </form>
+            <div id="admm"></div>
+    </div>
+    <script>
+        if (screen && screen.width > 900) {
+        document.write('<script type="text/javascript" src="js/admission.js"><\/script>');
+        }
+     </script>
+        
+        <script>
+        if (screen && screen.width < 900) {
+        document.write('<script type="text/javascript" src="js/admission1.js"><\/script>');
+        }
+        </script>
+   
+   <!-- <script rel="stylesheet" src="js/admission.js"></script>-->
+    </body>
+</html>
